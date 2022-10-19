@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "removeComments": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "paths": {
+      "@modules/*": ["./src/modules/*"],
+      "@models/*": ["./src/models/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@guards/*": ["./src/guards/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@configs/*": ["./src/configs/*"],
+      "@enums/*": ["./src/enums/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@secrets/*": ["./src/secrets/*"],
+      "@validators/*": ["./src/validators/*"],
+      "@providers/*": ["./src/providers/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
+  },
+  "include": [
+    "./src/**/*.ts",
+    "src/shared/**/*.ts",
+    "src/shared/user.interface.ts"
+  ],
+  "exclude": ["src/client"]
+}
